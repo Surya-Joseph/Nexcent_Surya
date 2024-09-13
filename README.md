@@ -25,3 +25,7 @@ Acknowledgements
 HTML5
 CSS3
 jQuery
+
+Output:
+![screencapture-file-D-Nextcent-Surya-index-hml](https://github.com/user-attachments/assets/7323ef99-1a3a-4c0b-a129-2156c1609c1c)
+
