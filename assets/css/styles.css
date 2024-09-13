@@ -84,7 +84,8 @@ header {
 }
 
 .navbar a.active {
-    color: var(--main-color);
+    color: black;
+    font-weight: bold;
 }
 
 .main {
@@ -176,15 +177,7 @@ header {
 }
 
 /* Default column styling */
-.col {
-    /* padding: 20px; */
-    /* background-color: #f2f2f2; */
-    /* border: 1px solid #ccc; */
-    /* text-align: center; */
-    /* padding: 0 100px; */
-}
 
-/* Column width utilities */
 .col-100 {
     flex: 0 0 100%;
 }
@@ -227,7 +220,7 @@ header {
 /* banner styling */
 .banner {
     background-color: var(--secondary-bgColor);
-    margin-top: 90px;
+    margin-top: 70px;
 }
 
 .banner_content {
@@ -296,6 +289,7 @@ header {
 /* business section styling */
 .business-section {
     background-color: var(--secondary-bgColor);
+    margin:  30px 0px;
 }
 
 .business-grid-container {
@@ -314,6 +308,9 @@ header {
 
 
 /* marketing section styling */
+.marketing-container{
+    margin: 50px 0;
+}
 .marketing-cards-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -337,7 +334,7 @@ header {
 }
 
 .marketing-card-content {
-    width: 70%;
+    width: 75%;
     text-align: center;
     margin: -38px auto 0 auto;
     background-color: var(--secondary-bgColor);
@@ -430,9 +427,7 @@ footer li {
 
 input[type="email"] {
     padding: 10px 15px 10px 15px;
-    /* Adjust based on icon size */
-    border-radius: 4px;
-    width: 100%;
+     width: 100%;
     box-sizing: border-box;
     background-color: gray;
     color: #fff;
@@ -441,23 +436,16 @@ input[type="email"] {
 
 input::placeholder {
     color: #fff;
-    /* Change to your desired color */
     opacity: 1;
-    /* Ensures the color is visible */
 }
 
 .icon-email {
     position: absolute;
     right: 10px;
-    /* Adjust based on icon size */
     top: 50%;
     transform: translateY(-50%);
     pointer-events: none;
-    /* Prevents the icon from interfering with input */
-    font-family: 'FontAwesome';
-    /* Use FontAwesome or another icon font */
     font-size: 18px;
-    /* Adjust icon size */
 }
 
 /* carousal section styling */
@@ -602,38 +590,11 @@ input::placeholder {
         margin-right: 5px;
         margin-left: 4px;
     }
-
-
-    .logo img {
-        width: 80%;
+    .banner {
+        background-color: var(--secondary-bgColor);
+        margin-top: 50px;
     }
 
-    .col-100,
-    .col-50,
-    .col-60,
-    .col-40,
-    .col-33,
-    .col-25,
-    .col-20,
-    .col-30 {
-        flex: 0 0 100% !important;
-    }
-
-    .infos div {
-        padding: 0;
-    }
-
-    .demo-section h1 {
-        font-size: 34px;
-    }
-
-    .community-card-content {
-        padding: 1rem;
-    }
-
-    .footer .info>div {
-        padding: 20px 0px 60px 0px;
-    }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -797,7 +758,10 @@ input::placeholder {
         margin-top: 10px;
         display: flex;
         flex-wrap: wrap;
-    }    
+    }  
+    .marketing-container{
+        margin: 0;
+    }  
 }
 
 
@@ -840,7 +804,7 @@ input::placeholder {
     }
 
     .business-grid-container{
-        justify-items: center;
+        justify-content: center;
     }
     .input-wrapper-container{
         padding: 20px 0px 0px 0px !important;
@@ -851,5 +815,11 @@ input::placeholder {
     #popup {
         width: 300px;
         border-radius: 5px;
+    }
+    .marketing-container{
+        margin: 0;
+    }
+    .business-section{
+        margin:  0px;
     }
 }
